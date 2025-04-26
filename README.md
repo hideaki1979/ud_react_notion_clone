@@ -66,17 +66,14 @@ cp .env.example .env
 4. `.env` ファイルを編集して以下の値を設定します:
 
 ```
-DATABASE_URL="your_mongodb_connection_string"
-NEXTAUTH_SECRET="your_random_secret_key"
-NEXTAUTH_URL="http://localhost:3000"
+VITE_SUPABASE_URL=""
+VITE_SUPABASE_API_KEY=""
 ```
 
-5. データベースをセットアップする:
-
-```bash
-npx prisma generate
-npx prisma db push
-```
+5. Supabaseプロジェクトを設定する:
+   - Supabaseダッシュボードで新しいプロジェクトを作成します
+   - 必要なテーブルやスキーマをセットアップします
+   - プロジェクトのURLとAPIキーを`.env`ファイルに設定します
 
 6. 開発サーバーを起動する:
 
