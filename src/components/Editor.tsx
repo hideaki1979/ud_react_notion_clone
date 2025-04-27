@@ -1,7 +1,7 @@
 import { useCreateBlockNote } from '@blocknote/react';
 import '@blocknote/mantine/style.css';
 import { BlockNoteView } from '@blocknote/mantine';
-import { BlockNoteEditor, locales, PartialBlock } from '@blocknote/core';
+import { BlockNoteEditor, locales } from '@blocknote/core';
 
 
 interface EditorProps {
