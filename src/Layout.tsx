@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import { noteRepository } from './modules/notes/note.repository';
 import { Note } from './modules/notes/note.entity';
 import { subscribe, unsubscribe } from './lib/supabase';
-import { Pyramid } from 'lucide-react';
 
 
 /**

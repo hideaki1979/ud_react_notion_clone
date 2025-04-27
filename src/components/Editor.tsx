@@ -1,7 +1,7 @@
 import { useCreateBlockNote } from '@blocknote/react';
 import '@blocknote/mantine/style.css';
 import { BlockNoteView } from '@blocknote/mantine';
-import { ja } from '@blocknote/core/locales'
+import { BlockNoteEditor, locales, PartialBlock } from '@blocknote/core';
 
 
 interface EditorProps {
@@ -10,8 +10,8 @@ interface EditorProps {
 }
 
 function Editor({ onChange, initialContent }: EditorProps) {
-  const editor = useCreateBlockNote({
-    dictionary: ja,
+  const editor: BlockNoteEditor = useCreateBlockNote({
+    dictionary: locales.ja,
     initialContent: initialContent
       ? JSON.parse(initialContent)
       : undefined
